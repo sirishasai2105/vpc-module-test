@@ -7,7 +7,7 @@ terraform {
   }
     backend "s3" {
       bucket = "remote-state-bucket-aws"
-      key = "terraform_vpc"
+      key = "terraform_vpc-test"
       region = "us-east-1"
       dynamodb_table = "remote-state-table"
     }
@@ -15,3 +15,4 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+
